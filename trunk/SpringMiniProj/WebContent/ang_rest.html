@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app>
+	<head>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    	<script src="call.js"></script>
+	</head>
+
+	<body>
+	
+	<div ng-app=""  ng-init="stdRecords=true;errMsg=true" ng-controller="studentController">
+		<input type="text" ng-model="std_id"><br>
+		<button ng-click="getData()">Get student details</button>
+		<br>
+		<p ng-hide="stdRecords">		
+			Student Id is  : {{student.studentId}}<br/>
+			Student First Name : {{student.firstName}}<br/>
+			Student Last  Name :  {{student.lastName}}<br/>
+			Student Email Id   : {{student.emailId}}<br/>
+			Student Phone Number : {{student.phoneNumber}}<br/>
+		</p>
+		<p ng-hide="errMsg">		
+			Error message {{errorMessage}}<br/>			
+		</p>
+	</div>		
+	</body>
+</html>

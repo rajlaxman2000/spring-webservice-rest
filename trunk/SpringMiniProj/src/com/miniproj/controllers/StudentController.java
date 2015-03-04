@@ -37,6 +37,16 @@ public class StudentController {
 	}
 	
 	/**
+	 * This mapping is for static search page to take user search criteria
+	 * @return
+	 */
+	@RequestMapping(value = "/restPage")
+	public String restPage(){
+		
+		return "angrest";
+	}
+	
+	/**
 	 * This mapping will be called to search the student based on given criteria and it will return display view if student found else 
 	 * will display student not found message 
 	 * @param searchStr
