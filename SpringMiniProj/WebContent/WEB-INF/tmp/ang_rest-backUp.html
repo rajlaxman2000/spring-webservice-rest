@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app>
+	<head>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    	<script src="call.js"></script>
+	</head>
+
+	<body>
+	
+		<div ng-controller="GetStudent">		
+			<p>Student Id is  : {{student.studentId}}</p>
+			<p>Student First Name : {{student.firstName}}</p>
+			<p>Student Last  Name :  {{student.lastName}}</p>
+			<p>Student Email Id   : {{student.emailId}}</p>
+			<p>Student Phone Number : {{student.phoneNumber}}</p>
+		</div>
+	</body>
+</html>
