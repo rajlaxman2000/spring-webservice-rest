@@ -47,6 +47,7 @@ public class Student implements Serializable {
 	private String phoneNumber;
 	
 	@Embedded	
+	@XmlElement(name="address")
 	private Address address;
 	
 	
