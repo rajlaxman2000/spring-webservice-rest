@@ -3,28 +3,29 @@ package com.student.dto;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Embeddable
 public class Address {
 	
 	@Column(name="dr_no")
-	@XmlElement(name="drNo")
+	//@XmlElement(name="drNo")
 	private String drNo;
 	
 	@Column(name="street_name")
-	@XmlElement(name="street")
+	//@XmlElement(name="street")
 	private String street;
 	
 	@Column(name="city_name")
-	@XmlElement(name="city")
+	//@XmlElement(name="city")
 	private String city;
 	
 	@Column(name="state_name")
-	@XmlElement(name="state")
+	//@XmlElement(name="state")
 	private String state;
 	
 	@Column(name="country")
-	@XmlElement(name="country")
+	//@XmlElement(name="country")
 	private String country;
 	
 	public Address(){
