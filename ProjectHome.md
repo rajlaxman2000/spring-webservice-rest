@@ -1,0 +1,1 @@
+it contains spring mvc and rest full web serivce sample as well as CRUD operation using Persistence Manager
